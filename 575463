@@ -1,1 +1,8 @@
-test
+return {
+    script_title = "Test Script",
+    script_version = "1.0",
+    script_key = "giopHJETUIHj5948hj5",
+    script_source = [[
+        print("Hello, world!")
+    ]]
+}
