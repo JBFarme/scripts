@@ -3,6 +3,647 @@ return {
     script_version = "1.0",
     script_key = "giopHJETUIHj5948hj5",
     script_source = [[
-        print("Hello, world!")
+        -- Generated using RoadToGlory's Converter v1.1 (RoadToGlory#9879)
+
+-- Instances:
+
+local Converted = {
+	["__gui"] = Instance.new("ScreenGui");
+	["__hold"] = Instance.new("Frame");
+	["_UIStroke"] = Instance.new("UIStroke");
+	["__main"] = Instance.new("Frame");
+	["_UIPadding"] = Instance.new("UIPadding");
+	["_UIStroke1"] = Instance.new("UIStroke");
+	["_UIListLayout"] = Instance.new("UIListLayout");
+	["__status"] = Instance.new("TextLabel");
+	["_UIPadding1"] = Instance.new("UIPadding");
+	["_UIStroke2"] = Instance.new("UIStroke");
+	["__button"] = Instance.new("Frame");
+	["__action"] = Instance.new("TextButton");
+	["_UIPadding2"] = Instance.new("UIPadding");
+	["_UIStroke3"] = Instance.new("UIStroke");
+	["_UIListLayout1"] = Instance.new("UIListLayout");
+	["__copy"] = Instance.new("TextButton");
+	["_UIPadding3"] = Instance.new("UIPadding");
+	["_UIStroke4"] = Instance.new("UIStroke");
+	["__show"] = Instance.new("TextButton");
+	["_UIPadding4"] = Instance.new("UIPadding");
+	["_UIStroke5"] = Instance.new("UIStroke");
+	["__scroll"] = Instance.new("ScrollingFrame");
+	["_UIStroke6"] = Instance.new("UIStroke");
+	["__list"] = Instance.new("TextBox");
+	["_UIListLayout2"] = Instance.new("UIListLayout");
+	["__top"] = Instance.new("Frame");
+	["_UIListLayout3"] = Instance.new("UIListLayout");
+	["__right"] = Instance.new("Frame");
+	["_UIListLayout4"] = Instance.new("UIListLayout");
+	["_UIPadding5"] = Instance.new("UIPadding");
+	["__hide"] = Instance.new("TextButton");
+	["_UIAspectRatioConstraint"] = Instance.new("UIAspectRatioConstraint");
+	["__close"] = Instance.new("TextButton");
+	["_UIAspectRatioConstraint1"] = Instance.new("UIAspectRatioConstraint");
+	["__script"] = Instance.new("LocalScript");
+}
+
+-- Properties:
+
+Converted["__gui"].ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+Converted["__gui"].Name = "_gui"
+Converted["__gui"].Parent = game:GetService("CoreGui")
+
+Converted["__hold"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["__hold"].AutomaticSize = Enum.AutomaticSize.X
+Converted["__hold"].BackgroundColor3 = Color3.fromRGB(30.00000201165676, 30.00000201165676, 30.00000201165676)
+Converted["__hold"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["__hold"].BorderSizePixel = 0
+Converted["__hold"].Position = UDim2.new(0.5, 0, 0.400000006, 0)
+Converted["__hold"].Size = UDim2.new(0, 0, 0, 20)
+Converted["__hold"].Name = "_hold"
+Converted["__hold"].Parent = Converted["__gui"]
+
+Converted["_UIStroke"].Color = Color3.fromRGB(100.00000163912773, 100.00000163912773, 100.00000163912773)
+Converted["_UIStroke"].LineJoinMode = Enum.LineJoinMode.Miter
+Converted["_UIStroke"].Parent = Converted["__hold"]
+
+Converted["__main"].AutomaticSize = Enum.AutomaticSize.XY
+Converted["__main"].BackgroundColor3 = Color3.fromRGB(20.000000707805157, 20.000000707805157, 20.000000707805157)
+Converted["__main"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["__main"].BorderSizePixel = 0
+Converted["__main"].ClipsDescendants = true
+Converted["__main"].LayoutOrder = 1
+Converted["__main"].Position = UDim2.new(0, 0, 1, 0)
+Converted["__main"].Size = UDim2.new(1, 0, -0.150000006, 0)
+Converted["__main"].Name = "_main"
+Converted["__main"].Parent = Converted["__hold"]
+
+Converted["_UIPadding"].PaddingBottom = UDim.new(0, 5)
+Converted["_UIPadding"].PaddingLeft = UDim.new(0, 5)
+Converted["_UIPadding"].PaddingRight = UDim.new(0, 5)
+Converted["_UIPadding"].PaddingTop = UDim.new(0, 5)
+Converted["_UIPadding"].Parent = Converted["__main"]
+
+Converted["_UIStroke1"].Color = Color3.fromRGB(100.00000163912773, 100.00000163912773, 100.00000163912773)
+Converted["_UIStroke1"].LineJoinMode = Enum.LineJoinMode.Miter
+Converted["_UIStroke1"].Parent = Converted["__main"]
+
+Converted["_UIListLayout"].Padding = UDim.new(0, 6)
+Converted["_UIListLayout"].HorizontalAlignment = Enum.HorizontalAlignment.Center
+Converted["_UIListLayout"].SortOrder = Enum.SortOrder.LayoutOrder
+Converted["_UIListLayout"].VerticalAlignment = Enum.VerticalAlignment.Center
+Converted["_UIListLayout"].Parent = Converted["__main"]
+
+Converted["__status"].Font = Enum.Font.RobotoMono
+Converted["__status"].Text = "The place is not found in the database"
+Converted["__status"].TextColor3 = Color3.fromRGB(100.00000163912773, 100.00000163912773, 100.00000163912773)
+Converted["__status"].TextSize = 14
+Converted["__status"].TextWrapped = true
+Converted["__status"].TextXAlignment = Enum.TextXAlignment.Left
+Converted["__status"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["__status"].BackgroundColor3 = Color3.fromRGB(35.00000171363354, 35.00000171363354, 35.00000171363354)
+Converted["__status"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["__status"].BorderSizePixel = 0
+Converted["__status"].ClipsDescendants = true
+Converted["__status"].Size = UDim2.new(0, 300, 0, 20)
+Converted["__status"].Name = "_status"
+Converted["__status"].Parent = Converted["__main"]
+
+Converted["_UIPadding1"].PaddingBottom = UDim.new(0, 2)
+Converted["_UIPadding1"].PaddingLeft = UDim.new(0, 5)
+Converted["_UIPadding1"].Parent = Converted["__status"]
+
+Converted["_UIStroke2"].ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+Converted["_UIStroke2"].Color = Color3.fromRGB(100.00000163912773, 100.00000163912773, 100.00000163912773)
+Converted["_UIStroke2"].LineJoinMode = Enum.LineJoinMode.Miter
+Converted["_UIStroke2"].Parent = Converted["__status"]
+
+Converted["__button"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Converted["__button"].BackgroundTransparency = 1
+Converted["__button"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["__button"].BorderSizePixel = 0
+Converted["__button"].LayoutOrder = 1
+Converted["__button"].Size = UDim2.new(1, 0, 0, 20)
+Converted["__button"].Name = "_button"
+Converted["__button"].Parent = Converted["__main"]
+
+Converted["__action"].Font = Enum.Font.RobotoMono
+Converted["__action"].Text = "[teleport]"
+Converted["__action"].TextColor3 = Color3.fromRGB(100.00000163912773, 100.00000163912773, 100.00000163912773)
+Converted["__action"].TextSize = 14
+Converted["__action"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["__action"].AutomaticSize = Enum.AutomaticSize.X
+Converted["__action"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
+Converted["__action"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["__action"].BorderSizePixel = 0
+Converted["__action"].ClipsDescendants = true
+Converted["__action"].Size = UDim2.new(0, 0, 0, 20)
+Converted["__action"].Name = "_action"
+Converted["__action"].Parent = Converted["__button"]
+
+Converted["_UIPadding2"].PaddingBottom = UDim.new(0, 2)
+Converted["_UIPadding2"].PaddingLeft = UDim.new(0, 10)
+Converted["_UIPadding2"].PaddingRight = UDim.new(0, 10)
+Converted["_UIPadding2"].Parent = Converted["__action"]
+
+Converted["_UIStroke3"].ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+Converted["_UIStroke3"].Color = Color3.fromRGB(100.00000163912773, 100.00000163912773, 100.00000163912773)
+Converted["_UIStroke3"].LineJoinMode = Enum.LineJoinMode.Miter
+Converted["_UIStroke3"].Parent = Converted["__action"]
+
+Converted["_UIListLayout1"].Padding = UDim.new(0, 6)
+Converted["_UIListLayout1"].FillDirection = Enum.FillDirection.Horizontal
+Converted["_UIListLayout1"].SortOrder = Enum.SortOrder.LayoutOrder
+Converted["_UIListLayout1"].VerticalAlignment = Enum.VerticalAlignment.Center
+Converted["_UIListLayout1"].Parent = Converted["__button"]
+
+Converted["__copy"].Font = Enum.Font.RobotoMono
+Converted["__copy"].Text = "[copy]"
+Converted["__copy"].TextColor3 = Color3.fromRGB(100.00000163912773, 100.00000163912773, 100.00000163912773)
+Converted["__copy"].TextSize = 14
+Converted["__copy"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["__copy"].AutomaticSize = Enum.AutomaticSize.X
+Converted["__copy"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
+Converted["__copy"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["__copy"].BorderSizePixel = 0
+Converted["__copy"].ClipsDescendants = true
+Converted["__copy"].LayoutOrder = 1
+Converted["__copy"].Size = UDim2.new(0, 0, 0, 20)
+Converted["__copy"].Name = "_copy"
+Converted["__copy"].Parent = Converted["__button"]
+
+Converted["_UIPadding3"].PaddingBottom = UDim.new(0, 2)
+Converted["_UIPadding3"].PaddingLeft = UDim.new(0, 10)
+Converted["_UIPadding3"].PaddingRight = UDim.new(0, 10)
+Converted["_UIPadding3"].Parent = Converted["__copy"]
+
+Converted["_UIStroke4"].ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+Converted["_UIStroke4"].Color = Color3.fromRGB(100.00000163912773, 100.00000163912773, 100.00000163912773)
+Converted["_UIStroke4"].LineJoinMode = Enum.LineJoinMode.Miter
+Converted["_UIStroke4"].Parent = Converted["__copy"]
+
+Converted["__show"].Font = Enum.Font.RobotoMono
+Converted["__show"].Text = "[list]"
+Converted["__show"].TextColor3 = Color3.fromRGB(100.00000163912773, 100.00000163912773, 100.00000163912773)
+Converted["__show"].TextSize = 14
+Converted["__show"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["__show"].AutomaticSize = Enum.AutomaticSize.X
+Converted["__show"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 40.00000141561031, 40.00000141561031)
+Converted["__show"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["__show"].BorderSizePixel = 0
+Converted["__show"].ClipsDescendants = true
+Converted["__show"].LayoutOrder = 2
+Converted["__show"].Size = UDim2.new(0, 0, 0, 20)
+Converted["__show"].Name = "_show"
+Converted["__show"].Parent = Converted["__button"]
+
+Converted["_UIPadding4"].PaddingBottom = UDim.new(0, 2)
+Converted["_UIPadding4"].PaddingLeft = UDim.new(0, 10)
+Converted["_UIPadding4"].PaddingRight = UDim.new(0, 10)
+Converted["_UIPadding4"].Parent = Converted["__show"]
+
+Converted["_UIStroke5"].ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+Converted["_UIStroke5"].Color = Color3.fromRGB(100.00000163912773, 100.00000163912773, 100.00000163912773)
+Converted["_UIStroke5"].LineJoinMode = Enum.LineJoinMode.Miter
+Converted["_UIStroke5"].Parent = Converted["__show"]
+
+Converted["__scroll"].AutomaticCanvasSize = Enum.AutomaticSize.Y
+Converted["__scroll"].CanvasSize = UDim2.new(0, 0, 0, 0)
+Converted["__scroll"].ScrollBarThickness = 1
+Converted["__scroll"].Active = true
+Converted["__scroll"].BackgroundColor3 = Color3.fromRGB(35.00000171363354, 35.00000171363354, 35.00000171363354)
+Converted["__scroll"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["__scroll"].BorderSizePixel = 0
+Converted["__scroll"].Size = UDim2.new(0, 300, 0, 300)
+Converted["__scroll"].Visible = false
+Converted["__scroll"].Name = "_scroll"
+Converted["__scroll"].Parent = Converted["__main"]
+
+Converted["_UIStroke6"].ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+Converted["_UIStroke6"].Color = Color3.fromRGB(100.00000163912773, 100.00000163912773, 100.00000163912773)
+Converted["_UIStroke6"].LineJoinMode = Enum.LineJoinMode.Miter
+Converted["_UIStroke6"].Parent = Converted["__scroll"]
+
+Converted["__list"].ClearTextOnFocus = false
+Converted["__list"].Font = Enum.Font.RobotoMono
+Converted["__list"].ShowNativeInput = false
+Converted["__list"].Text = ""
+Converted["__list"].TextColor3 = Color3.fromRGB(100.00000163912773, 100.00000163912773, 100.00000163912773)
+Converted["__list"].TextEditable = false
+Converted["__list"].TextXAlignment = Enum.TextXAlignment.Left
+Converted["__list"].TextYAlignment = Enum.TextYAlignment.Top
+Converted["__list"].AutomaticSize = Enum.AutomaticSize.Y
+Converted["__list"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Converted["__list"].BackgroundTransparency = 1
+Converted["__list"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["__list"].BorderSizePixel = 0
+Converted["__list"].ClipsDescendants = true
+Converted["__list"].Size = UDim2.new(1, 0, 0, 0)
+Converted["__list"].Name = "_list"
+Converted["__list"].Parent = Converted["__scroll"]
+
+Converted["_UIListLayout2"].HorizontalAlignment = Enum.HorizontalAlignment.Right
+Converted["_UIListLayout2"].SortOrder = Enum.SortOrder.LayoutOrder
+Converted["_UIListLayout2"].Parent = Converted["__hold"]
+
+Converted["__top"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["__top"].AutomaticSize = Enum.AutomaticSize.X
+Converted["__top"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Converted["__top"].BackgroundTransparency = 1
+Converted["__top"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["__top"].BorderSizePixel = 0
+Converted["__top"].ClipsDescendants = true
+Converted["__top"].Size = UDim2.new(0, 0, 1, 0)
+Converted["__top"].Name = "_top"
+Converted["__top"].Parent = Converted["__hold"]
+
+Converted["_UIListLayout3"].FillDirection = Enum.FillDirection.Horizontal
+Converted["_UIListLayout3"].HorizontalAlignment = Enum.HorizontalAlignment.Right
+Converted["_UIListLayout3"].SortOrder = Enum.SortOrder.LayoutOrder
+Converted["_UIListLayout3"].VerticalAlignment = Enum.VerticalAlignment.Center
+Converted["_UIListLayout3"].Parent = Converted["__top"]
+
+Converted["__right"].AutomaticSize = Enum.AutomaticSize.X
+Converted["__right"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Converted["__right"].BackgroundTransparency = 1
+Converted["__right"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["__right"].BorderSizePixel = 0
+Converted["__right"].ClipsDescendants = true
+Converted["__right"].Size = UDim2.new(0, 0, 1, 0)
+Converted["__right"].Name = "_right"
+Converted["__right"].Parent = Converted["__top"]
+
+Converted["_UIListLayout4"].FillDirection = Enum.FillDirection.Horizontal
+Converted["_UIListLayout4"].HorizontalAlignment = Enum.HorizontalAlignment.Right
+Converted["_UIListLayout4"].SortOrder = Enum.SortOrder.LayoutOrder
+Converted["_UIListLayout4"].VerticalAlignment = Enum.VerticalAlignment.Center
+Converted["_UIListLayout4"].Parent = Converted["__right"]
+
+Converted["_UIPadding5"].PaddingBottom = UDim.new(0, 3)
+Converted["_UIPadding5"].PaddingRight = UDim.new(0, 2)
+Converted["_UIPadding5"].Parent = Converted["__right"]
+
+Converted["__hide"].Font = Enum.Font.RobotoMono
+Converted["__hide"].Text = "−"
+Converted["__hide"].TextColor3 = Color3.fromRGB(100.00000163912773, 100.00000163912773, 100.00000163912773)
+Converted["__hide"].TextSize = 12
+Converted["__hide"].TextWrapped = true
+Converted["__hide"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Converted["__hide"].BackgroundTransparency = 1
+Converted["__hide"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["__hide"].BorderSizePixel = 0
+Converted["__hide"].Size = UDim2.new(1, 0, 1, 0)
+Converted["__hide"].Name = "_hide"
+Converted["__hide"].Parent = Converted["__right"]
+
+Converted["_UIAspectRatioConstraint"].Parent = Converted["__hide"]
+
+Converted["__close"].Font = Enum.Font.RobotoMono
+Converted["__close"].Text = "X"
+Converted["__close"].TextColor3 = Color3.fromRGB(100.00000163912773, 100.00000163912773, 100.00000163912773)
+Converted["__close"].TextSize = 12
+Converted["__close"].TextWrapped = true
+Converted["__close"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Converted["__close"].BackgroundTransparency = 1
+Converted["__close"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["__close"].BorderSizePixel = 0
+Converted["__close"].LayoutOrder = 1
+Converted["__close"].Size = UDim2.new(1, 0, 1, 0)
+Converted["__close"].Name = "_close"
+Converted["__close"].Parent = Converted["__right"]
+
+Converted["_UIAspectRatioConstraint1"].Parent = Converted["__close"]
+
+-- Fake Module Scripts:
+
+local fake_module_scripts = {}
+
+
+-- Fake Local Scripts:
+
+local function ZQJLX_fake_script() -- Fake Script: StarterGui._gui._script
+    local script = Instance.new("LocalScript")
+    script.Name = "_script"
+    script.Parent = Converted["__gui"]
+    local req = require
+    local require = function(obj)
+        local fake = fake_module_scripts[obj]
+        if fake then
+            return fake()
+        end
+        return req(obj)
+    end
+
+	local locations = {
+		[17400783059] = CFrame.new(43.148167, 0.000000, 23.791304),
+		[16080383777] = CFrame.new(-6.565883, 0.000000, 25.532267),
+		[16525589383] = CFrame.new(4.655642, 0.000000, 18.450542),
+		[17400719151] = CFrame.new(-64.285553, 0.000000, -4.437942),
+		[16080385539] = CFrame.new(-53.151524, 0.000000, 17.300383),
+		[17334025158] = CFrame.new(-88.206299, 0.000000, -19.747175),
+		[16525587387] = CFrame.new(-20.553459, 0.000000, 18.536407),
+		[16479377712] = CFrame.new(-58.620098, 0.000000, 8.020775),
+		[15995250370] = CFrame.new(43.157993, 0.000000, 23.776022),
+		[16479376800] = CFrame.new(31.760166, 0.000000, -14.983850),
+		[17363641111] = CFrame.new(-13.125525, 0.000000, 22.448008),
+		[16525589881] = CFrame.new(-43.677959, 0.000000, 18.445000),
+		[17343475464] = CFrame.new(-6.272583, 0.000000, 34.946041),
+		[17363346507] = CFrame.new(-2.532542, 0.000000, 29.688692),
+		[16539739429] = CFrame.new(-1.338750, 0.000000, 28.509716),
+		[17334037241] = CFrame.new(-7.197633, 0.000000, 26.503166),
+		[17298613303] = CFrame.new(40.445648, 0.000000, -9.289817),
+		[17400532055] = CFrame.new(11.843066, 0.000000, 37.514400),
+		[16027109539] = CFrame.new(-32.243401, 0.000000, 14.698367),
+		[17298890589] = CFrame.new(0.074842, 0.000000, 30.046274),
+		[15995486569] = CFrame.new(65.399246, 0.000000, 21.062397),
+		[15995305026] = CFrame.new(1.065283, 0.000000, 29.854359),
+		[16080385846] = CFrame.new(-76.438194, 0.000000, -14.784233),
+		[17363730834] = CFrame.new(-19.017483, 0.000000, 15.015117),
+		[16542944819] = CFrame.new(0.043983, 0.000000, 30.044874),
+		[16027109166] = CFrame.new(-1.363600, 0.000000, 28.502016),
+		[16539738866] = CFrame.new(-20.692699, 0.000000, 18.409416),
+		[16027112593] = CFrame.new(-88.208168, 0.000000, -19.750908),
+		[17333769018] = CFrame.new(0.057400, 0.000000, 30.049717),
+		[16479375053] = CFrame.new(-4.467458, 0.000000, 26.819683),
+		[16027108127] = CFrame.new(-80.924316, 0.000000, 20.627016),
+		[17362568178] = CFrame.new(46.445934, 0.000000, 5.297775),
+		[16054508741] = CFrame.new(69.020988, 0.000000, 19.911558),
+		[16080383369] = CFrame.new(60.351143, 0.000000, 25.596142),
+		[17362222113] = CFrame.new(-6.811934, 0.000000, 25.128658),
+		[16539737934] = CFrame.new(-4.236166, 0.000000, 25.497616),
+		[17333968808] = CFrame.new(-7.343175, 0.000000, 32.479942),
+		[17363386550] = CFrame.new(-4.846334, 0.000000, 27.446125),
+		[17333982547] = CFrame.new(-6.564308, 0.000000, 25.531275),
+		[17418637461] = CFrame.new(-16.904066, 0.000000, 23.921450),
+		[17361593660] = CFrame.new(-7.281342, 0.000000, 24.444876),
+		[17333878008] = CFrame.new(-7.803658, 0.000000, 30.634508),
+		[17333824671] = CFrame.new(-7.197633, 0.000000, 26.503166),
+		[17310246456] = CFrame.new(-9.515275, 0.000000, 28.107624),
+		[16479379268] = CFrame.new(88.515877, 0.000000, -9.625234),
+		[17363224043] = CFrame.new(-17.730417, 0.000000, 34.834915),
+		[17363870970] = CFrame.new(-5.372208, 0.000000, 25.843533),
+		[16479374230] = CFrame.new(-1.236900, 0.000000, 28.469524),
+		[17363195242] = CFrame.new(-7.331392, 0.000000, 32.476326),
+		[16479382062] = CFrame.new(13.095542, 0.000000, 37.263565),
+		[17333944397] = CFrame.new(-4.059008, 0.000000, 29.715759),
+		[16080383923] = CFrame.new(-62.523941, 0.000000, 12.197530),
+		[16054509034] = CFrame.new(-15.083366, 0.000000, -10.455842),
+		[16054507422] = CFrame.new(2.093058, 0.000000, 21.686058),
+		[16479379880] = CFrame.new(40.395832, 0.000000, -14.291667),
+		[17364350365] = CFrame.new(-79.056831, 0.000000, 20.234259),
+		[16027112905] = CFrame.new(-18.161617, 0.000000, 17.487867),
+		[17333827144] = CFrame.new(-83.477974, 0.000000, -22.552891),
+		[17363239409] = CFrame.new(1.376083, 0.000000, 29.972309),
+		[16525586936] = CFrame.new(44.937958, 0.000000, 22.690325),
+		[17298750469] = CFrame.new(-67.823524, 0.000000, 23.331875),
+		[17364127332] = CFrame.new(43.825832, 0.000000, -8.597750),
+		[16027108443] = CFrame.new(-20.675900, 0.000000, 17.691626),
+		[17363821675] = CFrame.new(-70.878036, 0.000000, 18.219542),
+		[17310326343] = CFrame.new(5.376000, 0.000000, 22.570101),
+		[16479381762] = CFrame.new(-3.931667, 0.000000, 35.072449),
+		[16080386461] = CFrame.new(69.730675, 0.000000, 22.087975),
+		[17361573072] = CFrame.new(65.442474, 0.000000, 21.929251),
+		[16525590449] = CFrame.new(-10.564458, 0.000000, 24.874441),
+		[15995371012] = CFrame.new(-67.999397, 0.000000, 23.585276),
+		[17400541685] = CFrame.new(-69.698593, 0.000000, -4.974492),
+		[16539740811] = CFrame.new(-2.538900, 0.000000, 29.660633),
+		[16525588188] = CFrame.new(0.044392, 0.000000, 30.046392),
+		[16479378433] = CFrame.new(53.063267, 0.000000, -0.556383),
+		[16539738104] = CFrame.new(0.069708, 0.000000, 30.043592),
+		[17364281999] = CFrame.new(-7.540458, 0.000000, 32.419510),
+		[16080384418] = CFrame.new(-7.195883, 0.000000, 26.505209),
+		[17284203839] = CFrame.new(-1.366808, 0.000000, 28.517242),
+		[16542945711] = CFrame.new(-70.874420, 0.000000, 18.224501),
+		[17298679551] = CFrame.new(0.352567, 0.000000, 30.032274),
+		[16080383640] = CFrame.new(46.309143, 0.000000, 25.458183),
+		[17364256654] = CFrame.new(0.078633, 0.000000, 30.047441),
+		[17364460569] = CFrame.new(-20.553459, 0.000000, 18.536407),
+		[16054508364] = CFrame.new(-13.840575, 0.000000, 22.150042),
+		[16027111260] = CFrame.new(25.206125, 0.000000, -13.388608),
+		[17343450112] = CFrame.new(67.164886, 0.000000, 21.099108),
+		[16479377982] = CFrame.new(-48.422733, 0.000000, 14.763933),
+		[16027111650] = CFrame.new(-13.839992, 0.000000, 22.150042),
+		[17361697207] = CFrame.new(-14.555625, 0.000000, 35.099110),
+		[16479380338] = CFrame.new(71.413414, 0.000000, 22.065750),
+		[16027109776] = CFrame.new(0.072683, 0.000000, 30.042074),
+		[17284833204] = CFrame.new(43.164860, 0.000000, 23.745226),
+		[17399416015] = CFrame.new(-10.541242, 0.000000, 34.606308),
+		[17362415790] = CFrame.new(64.763123, 0.000000, 20.432709),
+		[16479377172] = CFrame.new(-66.584877, 0.000000, 12.994275),
+		[17333864665] = CFrame.new(-6.411767, 0.000000, 26.505733),
+		[17333839332] = CFrame.new(44.937260, 0.000000, 22.685541),
+		[16080386083] = CFrame.new(-67.898544, 0.000000, 23.284508),
+		[17399418958] = CFrame.new(-16.903133, 0.000000, 23.919817),
+		[17298859357] = CFrame.new(-20.317617, 0.000000, 22.541517),
+		[15995403590] = CFrame.new(-45.524559, 0.000000, 15.852141),
+		[16542945430] = CFrame.new(3.122933, 0.000000, 21.082134),
+		[17361643710] = CFrame.new(72.336014, 0.000000, 24.041033),
+		[16479374778] = CFrame.new(63.787327, 0.000000, -15.815742),
+		[17310359916] = CFrame.new(-1.372117, 0.000000, 28.502016),
+		[16525588815] = CFrame.new(-63.709743, 0.000000, 20.056925),
+		[16027111985] = CFrame.new(-7.287117, 0.000000, 24.435949),
+		[17363152244] = CFrame.new(-7.817250, 0.000000, 30.636316),
+		[16542945185] = CFrame.new(51.120941, 0.000000, 24.429358),
+		[17361996676] = CFrame.new(-10.434550, 0.000000, 34.603916),
+		[16479374530] = CFrame.new(0.881708, 0.000000, 28.371058),
+		[16479373904] = CFrame.new(-6.067658, 0.000000, 25.504967),
+		[17363425618] = CFrame.new(2.151508, 0.000000, 23.597584),
+		[15995543167] = CFrame.new(42.317917, 0.000000, -7.678475),
+		[17362131435] = CFrame.new(71.054375, 0.000000, 21.157734),
+		[16080386261] = CFrame.new(1.866608, 0.000000, 32.636684),
+		[16027107574] = CFrame.new(64.509956, 0.000000, 25.916334),
+		[17364096512] = CFrame.new(-1.763183, 0.000000, 25.714441),
+		[17361606098] = CFrame.new(52.607800, 0.000000, 22.531075),
+		[16479373705] = CFrame.new(-8.457691, 0.000000, 23.768616),
+		[16479375450] = CFrame.new(-42.712074, 0.000000, 1.868300),
+		[16027110700] = CFrame.new(-50.706249, 0.000000, 16.326391),
+		[17343239273] = CFrame.new(44.945950, 0.000000, 22.685425),
+		[16080384688] = CFrame.new(67.624725, 0.000000, 30.039801),
+		[16539737658] = CFrame.new(-9.123333, 0.000000, 45.628334),
+		[16479378913] = CFrame.new(-2.855125, 0.000000, 30.547241),
+		[16054507045] = CFrame.new(-6.270717, 0.000000, 27.741934),
+		[17333823706] = CFrame.new(43.154243, 0.000000, 23.775908),
+		[16539738446] = CFrame.new(-6.544767, 0.000000, 27.114792),
+		[16542970805] = CFrame.new(-7.803658, 0.000000, 30.634508),
+		[16479377388] = CFrame.new(-16.905117, 0.000000, 23.921684),
+		[16539739134] = CFrame.new(-5.649583, 0.000000, 25.745358),
+		[16054505990] = CFrame.new(-14.852542, 0.000000, 21.229366),
+		[17362324297] = CFrame.new(-3.105958, 0.000000, 35.231640),
+		[16027108707] = CFrame.new(71.445679, 0.000000, 22.061609),
+		[17363276092] = CFrame.new(-14.797417, 0.000000, 26.550417),
+		[16539739762] = CFrame.new(-8.518358, 0.000000, 23.703167),
+		[17399413572] = CFrame.new(-7.281925, 0.000000, 24.442192),
+		[16539737479] = CFrame.new(-81.518150, 0.000000, 20.800850),
+		[16027110976] = CFrame.new(46.126907, 0.000000, 25.129942),
+		[17362252140] = CFrame.new(-14.434816, 0.000000, 34.671585),
+		[17362026831] = CFrame.new(-8.406650, 0.000000, 29.217125),
+		[17364303938] = CFrame.new(-1.372992, 0.000000, 25.207117),
+		[17364430864] = CFrame.new(-0.885150, 0.000000, 27.776466),
+		[17363844644] = CFrame.new(-7.362484, 0.000000, 32.687725),
+		[17363208937] = CFrame.new(-2.804375, 0.000000, 25.638025),
+		[17361959724] = CFrame.new(44.949509, 0.000000, 22.675276),
+		[15995240099] = CFrame.new(-1.338458, 0.000000, 28.500732),
+		[16080385292] = CFrame.new(-1.371300, 0.000000, 28.497524),
+		[17333791155] = CFrame.new(-0.802025, 0.000000, 29.832483),
+	}
+	
+	local gui = script.Parent
+	local hold = gui:WaitForChild('_hold')
+	local top = hold:FindFirstChild('_top')
+	local main = hold:FindFirstChild('_main')
+	local right = top:FindFirstChild('_right')
+	local hide = right:FindFirstChild('_hide')
+	local close = right:FindFirstChild('_close')
+	local button = main:FindFirstChild('_button')
+	local status = main:FindFirstChild('_status')
+	local action = button:FindFirstChild('_action')
+	local copy = button:FindFirstChild('_copy')
+	local show = button:FindFirstChild('_show')
+	local scroll = main:FindFirstChild('_scroll')
+	local list = scroll:FindFirstChild('_list')
+	
+	local screen = workspace.Screens.Screen.Gui
+	local thumb = screen:WaitForChild("Thumbnail")
+	local title = screen:WaitForChild("Title")
+	
+	local currentIdentifier = nil
+	local currentPosition = nil
+	
+	local UIS = game:GetService('UserInputService')
+	local dragToggle = nil
+	local dragSpeed = 0.05
+	local dragStart = nil
+	local startPos = nil
+	
+	local clonedAttachment = nil
+	
+	local function updateInput(input)
+		local delta = input.Position - dragStart
+		local position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X,
+			startPos.Y.Scale, startPos.Y.Offset + delta.Y)
+		game:GetService('TweenService'):Create(hold, TweenInfo.new(dragSpeed), {Position = position}):Play()
+	end
+	
+	local function onIdentifierChanged()
+		local imageValue = thumb.Image
+		local identifier = tonumber(imageValue:match("%d+"))
+	
+		if not identifier then return end
+	
+		currentIdentifier = identifier
+	
+		if locations[identifier] then
+			-- Если место найдено в базе
+			status.Text = "The place is found in the database"
+			action.Interactable = true
+	
+			-- Переместить клонированный Attachment в позицию
+			if clonedAttachment then
+				clonedAttachment.CFrame = locations[identifier]
+				clonedAttachment.FlagGui.Enabled = true
+			end
+		else
+			-- Если место отсутствует в базе
+			status.Text = "The place is not found in the database"
+			action.Interactable = false
+			if clonedAttachment then
+				clonedAttachment.FlagGui.Enabled = false
+			end
+		end
+	end
+	
+	local function updateTextBox()
+		local count = 0
+		for _ in pairs(locations) do
+			count = count + 1
+		end
+	
+		local output = string.format("-- Total locations: %d\n", count)
+		output = output .. "local locations = {\n"
+	
+		for id, position in pairs(locations) do
+			local x, y, z = position.X, position.Y, position.Z
+			output = output .. string.format("    [%d] = CFrame.new(%f, %f, %f),\n", id, x, y, z)
+		end
+	
+		output = output .. "}"
+		list.Text = output
+	end
+	
+	local function copyTextBox()
+		local output = "local locations = {\n"
+		for id, position in pairs(locations) do
+			local x, y, z = position.X, position.Y, position.Z
+			output = output .. string.format("    [%d] = CFrame.new(%f, %f, %f),\n", id, x, y, z)
+		end
+		output = output .. "}"
+		setclipboard(output)
+	end
+	
+	local function onTitleVisibleChanged()
+		if title.Visible and currentIdentifier then
+			local attachment = workspace.Terrain:FindFirstChild("Attachment")
+			if attachment and attachment:IsA("Attachment") and attachment.Name == "Attachment" then
+				currentPosition = attachment.CFrame
+	
+				-- Клонируем и настраиваем Attachment, если он еще не был клонирован
+				if not clonedAttachment then
+					clonedAttachment = attachment:Clone()
+					clonedAttachment.Name = "ClonedAttachment"
+					clonedAttachment.FlagGui.Enabled = false
+					clonedAttachment.FlagGui.Title:Destroy()
+					clonedAttachment.Parent = workspace.Terrain
+				end
+	
+				-- Добавление новой локации в базу
+				if not locations[currentIdentifier] then
+					locations[currentIdentifier] = CFrame.new(currentPosition.Position)
+					status.Text = "The place has been added to the database"
+					action.Interactable = true
+					updateTextBox()
+				end
+			end
+		end
+	end
+	
+	hold.InputBegan:Connect(function(input)
+		if (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) then 
+			dragToggle = true
+			dragStart = input.Position
+			startPos = hold.Position
+			input.Changed:Connect(function()
+				if input.UserInputState == Enum.UserInputState.End then
+					dragToggle = false
+				end
+			end)
+		end
+	end)
+	
+	UIS.InputChanged:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+			if dragToggle then
+				updateInput(input)
+			end
+		end
+	end)
+	
+	action.MouseButton1Click:Connect(function()
+		if currentIdentifier then
+			local player = game.Players.LocalPlayer
+			local character = player.Character or player.CharacterAdded:Wait()
+			local humanoidRootPart = character:WaitForChild("HumanoidRootPart")
+			humanoidRootPart.CFrame = locations[currentIdentifier]
+		end
+	end)
+	
+	show.MouseButton1Click:Connect(function()
+		scroll.Visible = not scroll.Visible
+	end)
+	
+	updateTextBox()
+	copy.MouseButton1Click:Connect(copyTextBox)
+	thumb:GetPropertyChangedSignal("Image"):Connect(onIdentifierChanged)
+	title:GetPropertyChangedSignal("Visible"):Connect(onTitleVisibleChanged)
+end
+
+coroutine.wrap(ZQJLX_fake_script)()
     ]]
 }
