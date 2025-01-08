@@ -1,7 +1,7 @@
 return {
     script_title = "Test Script",
     script_version = "1.0",
-    script_key = "giopHJETUIHj5948hj5",
+    script_key = "key",
     script_source = [[
         -- Generated using RoadToGlory's Converter v1.1 (RoadToGlory#9879)
 
