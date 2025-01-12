@@ -23,8 +23,6 @@ cursor.Parent = gui
 
 local isHoveringButton = false
 
-userInputService.MouseIconEnabled = false
-
 local function isMouseOverButton()
 	for _, guiObject in ipairs(coreGui:GetDescendants()) do
 		if guiObject:IsA("TextButton") or guiObject:IsA("ImageButton") then
@@ -38,6 +36,20 @@ local function isMouseOverButton()
 			end
 		end
 	end
+	for _, part in ipairs(workspace:GetDescendants()) do
+        if part:IsA("SurfaceGui") then
+            for _, guiObject in ipairs(part:GetDescendants()) do
+                if guiObject:IsA("TextButton") or guiObject:IsA("ImageButton") then
+                    local absPos = guiObject.AbsolutePosition
+                    local absSize = guiObject.AbsoluteSize
+
+                    if mousePosition.X >= absPos.X and mousePosition.X <= absPos.X + absSize.X and
+                       mousePosition.Y >= absPos.Y and mousePosition.Y <= absPos.Y + absSize.Y then
+                        return true, guiObject
+                    end
+                end
+            end
+        end
 	return false, nil
 end
 
@@ -52,3 +64,6 @@ runService.RenderStepped:Connect(function()
 		isHoveringButton = false
 	end
 end)
+
+task.wait(3)
+userInputService.MouseIconEnabled = false
