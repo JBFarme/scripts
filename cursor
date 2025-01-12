@@ -1,0 +1,54 @@
+local player = game.Players.LocalPlayer
+local mouse = player:GetMouse()
+local userInputService = game:GetService("UserInputService")
+local runService = game:GetService("RunService")
+
+local coreGui = game.CoreGui
+local originalCursor = "rbxassetid://90470993351877"
+local hoverCursor = "rbxassetid://92996004407337"
+
+local gui = Instance.new("ScreenGui")
+gui.Name = "RobloxAPICursor"
+gui.ResetOnSpawn = false
+gui.DisplayOrder = 2147483647
+gui.Parent = coreGui
+
+local cursor = Instance.new("ImageLabel")
+cursor.Name = "CustomCursor"
+cursor.Image = originalCursor
+cursor.BackgroundTransparency = 1
+cursor.Size = UDim2.new(0, 32, 0, 32)
+cursor.ZIndex = 2147483647
+cursor.Parent = gui
+
+local isHoveringButton = false
+
+userInputService.MouseIconEnabled = false
+
+local function isMouseOverButton()
+	for _, guiObject in ipairs(coreGui:GetDescendants()) do
+		if guiObject:IsA("TextButton") or guiObject:IsA("ImageButton") then
+			local absPos = guiObject.AbsolutePosition
+			local absSize = guiObject.AbsoluteSize
+			local mousePos = Vector2.new(mouse.X, mouse.Y)
+
+			if mousePos.X >= absPos.X and mousePos.X <= absPos.X + absSize.X and
+				mousePos.Y >= absPos.Y and mousePos.Y <= absPos.Y + absSize.Y then
+				return true, guiObject
+			end
+		end
+	end
+	return false, nil
+end
+
+runService.RenderStepped:Connect(function()
+	cursor.Position = UDim2.new(0, mouse.X, 0, mouse.Y)
+	local hovering, button = isMouseOverButton()
+	if hovering and not isHoveringButton then
+		cursor.Image = hoverCursor
+		isHoveringButton = true
+	elseif not hovering and isHoveringButton then
+		cursor.Image = originalCursor
+		isHoveringButton = false
+	end
+end)
