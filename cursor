@@ -3,7 +3,8 @@ local mouse = player:GetMouse()
 local userInputService = game:GetService("UserInputService")
 local runService = game:GetService("RunService")
 
-local coreGui = game.CoreGui
+local pgui = player.PlayerGui
+local cgui = game:GetService("CoreGui").TopBarApp
 local originalCursor = "rbxassetid://90470993351877"
 local hoverCursor = "rbxassetid://92996004407337"
 
@@ -11,7 +12,7 @@ local gui = Instance.new("ScreenGui")
 gui.Name = "RobloxAPICursor"
 gui.ResetOnSpawn = false
 gui.DisplayOrder = 2147483647
-gui.Parent = coreGui
+gui.Parent = cgui
 
 local cursor = Instance.new("ImageLabel")
 cursor.Name = "CustomCursor"
@@ -23,33 +24,43 @@ cursor.Parent = gui
 
 local isHoveringButton = false
 
+userInputService.MouseIconEnabled = false
+
+local function getFullPath(object)
+	local path = object.Name
+	local parent = object.Parent
+	while parent do
+		path = parent.Name .. "." .. path
+		parent = parent.Parent
+	end
+	return path
+end
+
 local function isMouseOverButton()
-	for _, guiObject in ipairs(coreGui:GetDescendants()) do
-		if guiObject:IsA("TextButton") or guiObject:IsA("ImageButton") then
-			local absPos = guiObject.AbsolutePosition
-			local absSize = guiObject.AbsoluteSize
+	for _, p in ipairs(pgui:GetDescendants()) do
+		if (p:IsA("TextButton") or p:IsA("ImageButton")) and p.Visible then
+			local absPos = p.AbsolutePosition
+			local absSize = p.AbsoluteSize
 			local mousePos = Vector2.new(mouse.X, mouse.Y)
 
 			if mousePos.X >= absPos.X and mousePos.X <= absPos.X + absSize.X and
 				mousePos.Y >= absPos.Y and mousePos.Y <= absPos.Y + absSize.Y then
-				return true, guiObject
+				return true, p
 			end
 		end
 	end
-	for _, part in ipairs(workspace:GetDescendants()) do
-        if part:IsA("SurfaceGui") then
-            for _, guiObject in ipairs(part:GetDescendants()) do
-                if guiObject:IsA("TextButton") or guiObject:IsA("ImageButton") then
-                    local absPos = guiObject.AbsolutePosition
-                    local absSize = guiObject.AbsoluteSize
+	for _, c in ipairs(cgui:GetDescendants()) do
+		if (c:IsA("TextButton") or c:IsA("ImageButton")) and c.Visible then
+			local absPos = c.AbsolutePosition
+			local absSize = c.AbsoluteSize
+			local mousePos = Vector2.new(mouse.X, mouse.Y)
 
-                    if mousePosition.X >= absPos.X and mousePosition.X <= absPos.X + absSize.X and
-                       mousePosition.Y >= absPos.Y and mousePosition.Y <= absPos.Y + absSize.Y then
-                        return true, guiObject
-                    end
-                end
-            end
-        end
+			if mousePos.X >= absPos.X and mousePos.X <= absPos.X + absSize.X and
+				mousePos.Y >= absPos.Y and mousePos.Y <= absPos.Y + absSize.Y then
+				return true, c
+			end
+		end
+	end
 	return false, nil
 end
 
@@ -64,6 +75,3 @@ runService.RenderStepped:Connect(function()
 		isHoveringButton = false
 	end
 end)
-
-task.wait(3)
-userInputService.MouseIconEnabled = false
